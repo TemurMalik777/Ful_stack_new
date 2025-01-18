@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reservation Request</title>
+    </head>
+    <body>
+        <div
+            style="
+                width: 500px;
+                height: auto;
+                background-color: white;
+                border: 4px solid blue;
+                padding: 20px;
+            "
+        >
+            <h1 style="color: black">Reservation Request</h1>
+            <fieldset>
+                <legend style="color: blue">General information</legend>
+                <label for="fname">Arrival date:</label>
+                <input
+                    type="date"
+                    name="arrival"
+                    id="arrival"
+                    value="12/39/2016"
+                    min="01-01-1900"
+                    max="01-01-2025"
+                />
+                <span style="color: red">Arrival date in invalid.</span>
+                <br />
+                <br />
+
+                <label for="nights" style="display: inline-block; width: 100px"
+                    >Nights:</label
+                >
+                <input type="text" id="nights" name="nights" value="three" />
+                <span style="color: red">Nights must be a number.</span
+                ><br /><br />
+
+                <label for="adults" style="display: inline-block; width: 100px"
+                    >Adults:</label
+                >
+                <select id="adults" name="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option></select
+                ><br /><br />
+
+                <label
+                    for="children"
+                    style="display: inline-block; width: 100px"
+                    >Children:</label
+                >
+                <select id="children" name="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend style="color: blue">Perefrences</legend>
+
+                <label for="gname">Room type:</label>
+                <input type="radio" id="Male" name="lang" value="Standard" />
+                <label for="Smale">Standard</label>
+                <input type="radio" id="Bmale" name="lang" value="Business" />
+                <label for="bumale">Business</label>
+                <input type="radio" id="Smale" name="lang" value="Suite" />
+                <label for="sumale">Suite</label><br /><br />
+
+                <label for="gname">Bed type:</label>
+                <input type="radio" id="Male" name="lang" value="Standard" />
+                <label for="Smale">King</label>
+                <input type="radio" id="ddmale" name="lang" value="double" />
+                <label for="ddmale">Double Double</label><br />
+
+                <input type="checkbox" name="smoking" id="smoking" />
+                <label for="smoking">Smoking</label><br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend style="color: blue">Contact information</legend>
+                <label for="fname">Name: </label>
+                <input type="text" name="fname" id="fname" />
+                <span style="color: red">Name is required.</span><br /><br />
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="testmail.com"
+                />
+                <span style="color: red">Email address is invalid.</span
+                ><br /><br />
+                <label for="phone">Phone:</label>
+                <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="123-456-789"
+                />
+                <span style="color: red">Phone number is invalid.</span>
+            </fieldset>
+            <br />
+            <button type="submit">Submit Reservation</button>
+            <button type="reset">Cancel</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Student Registaration Form</title>
+    </head>
+    <body>
+        <div
+            style="
+                width: 700px;
+                height: auto;
+                background-color: rgb(235, 235, 228);
+                /* border: 2px solid black; */
+                padding: 20px;
+            "
+        >
+            <form action="#">
+                <br />
+                <br />
+                <label for="fname">First name: </label>
+                <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    placeholder="Enter your furst name"
+                    style="
+                        width: 80%;
+                        padding: 9px;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    "
+                /><br /><br />
+
+                <label for="lname">Last name:</label>
+                <input
+                    type="text"
+                    name="lname"
+                    id="lname"
+                    placeholder="Enter your furst name"
+                    style="
+                        width: 80%;
+                        padding: 9px;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    "
+                />
+                <br />
+                <br />
+
+                <label for="email">Emali:</label>
+                <input
+                    type="email"
+                    name="emali"
+                    id="email"
+                    placeholder="it should contain@"
+                    style="
+                        width: 80%;
+                        padding: 9px;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    "
+                /><br /><br />
+
+                <label for="phone">Phone:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="only 10 digits are allowed"
+                    style="
+                        width: 80%;
+                        padding: 9px;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    "
+                    pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                /><br /><br />
+
+                <label for="gname">Gender:</label>
+                <input type="radio" id="Male" name="lang" value="Male" />
+                <label for="male">Male</label>
+                <input type="radio" id="Female" name="lang" value="Female" />
+                <label for="female">Female</label><br /><br />
+
+                <label for="nameDateBirth">Date Of Birth:</label>
+                <input
+                    type="date"
+                    name="birthday"
+                    id="birth"
+                    name="birthday"
+                    style="
+                        width: 80%;
+                        padding: 9px;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    "
+                />
+                <br />
+                <br />
+
+                <label for="nameAddress">Address:</label>
+                <textarea name="matn" id="matn" rows="10" cols="60"></textarea
+                ><br /><br />
+
+                <label for="cname">Cite:</label>
+                <input
+                    type="text"
+                    name="cname"
+                    id="cname"
+                    style="
+                        width: 80%;
+                        padding: 9px;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    "
+                /><br /><br />
+
+                <label for="aname">Area PIN:</label>
+                <input
+                    type="text"
+                    name="aname"
+                    id="aname"
+                    style="
+                        width: 80%;
+                        padding: 9px;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    "
+                /><br /><br />
+
+                <label for="sname">State:</label>
+                <input
+                    type="text"
+                    name="sname"
+                    id="sname"
+                    style="
+                        width: 80%;
+                        padding: 9px;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    "
+                /><br /><br />
+
+                <label for="qualiname">Qualification:</label>
+                <select name="qualific" id="qualific">
+                    <option selected hidden>Select Qualification</option>
+                    <option value="volvo">Lorem, ipsum.</option>
+                    <option value="saab">ipsum.</option></select
+                ><br /><br />
+
+                <label for="qualiname">Specialization:</label>
+                <input type="radio" name="lang" id="CSnameid" value="CSnamev" />
+                <label for="CSname">Computer Science</label><br />
+                <input type="radio" name="lang" id="ifnameid" value="ifnamev" />
+                <label for="inmae">information</label><br />
+                <input type="radio" name="lang" id="CAnameid" value="CAnamev" />
+                <label for="CAname">Computer Architecture</label><br />
+                <input type="radio" name="lang" id="TCnameid" value="TCnamev" />
+                <label for="TCname">Tele Communication</label><br /><br />
+                <!-- inputda radio botton bn ishlashda "name="lang"" qo'yish faqat bittasani tanlash majiburiy bo'ladi -->
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    style="
+                        width: 80%;
+                        padding: 9px;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    "
+                    required
+                /><br /><br />
+                <button type="submit">Registered</button>
+            </form>
+        </div>
+    </body>
+</html>
