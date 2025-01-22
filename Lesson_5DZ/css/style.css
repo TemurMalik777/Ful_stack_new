@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 30px;
+    margin: 70px 0;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 5px 150px;
+}
+.logo {
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+}
+.header p {
+    color: black;
+    opacity: 0.6;
+}
+.main {
+    padding: 15px 30px;
+}
+.bloc_div {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    justify-content: center; /* Nav-barni o'ng tomonga tortadi */
+}
+
+.content ul {
+    display: flex;
+    list-style: none;
+    gap: 150px; /* Elementlar orasida bo'shliq qo'shish */
+}
+
+.content ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #8b5e3c; /* Qahva rang */
+    transition: color 0.3s;
+}
+
+.content ul li a:hover {
+    color: #000; /* Hover effekti uchun qora rang */
+}
+
+.content ul li.active a {
+    font-weight: bold; /* Faol sahifa uchun qalin shrift */
+}
+figure {
+    margin: 70px 90px;
+    width: 100%;
+}
+figure img {
+    width: 85%;
+}
+li {
+    margin: 10px;
+}
+.sidebar {
+    width: 100%;
+    padding-right: 30px;
+    padding: 0 110px;
+    /* border: 1px solid black; */
+}
+.sidebar h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: capitalize;
+    /* border: 1px solid red; */
+}
+.sidebar ul {
+    margin-bottom: 40px;
+    line-height: 40px;
+    /* border: 3px solid red; */
+}
+.boxtxt {
+    /* border: 2px solid chartreuse; */
+    margin-bottom: 32px;
+    line-height: 32px;
+}
+.container ul li a {
+    color: orange;
+    text-decoration: underline;
+}
+.container_2 ul li a {
+    color: orange;
+    text-decoration: underline;
+}
+
+.sidebar_2 div h3 a {
+    /* border: 3px solid red; */
+    color: #000;
+}
+.postmeta a {
+    color: orange;
+}
+
+.sidebar_2 h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.entry a {
+    color: orange;
+    text-decoration: underline;
+}
+.entry p {
+    /* border: 1px solid red; */
+    padding-bottom: 20px;
+}
