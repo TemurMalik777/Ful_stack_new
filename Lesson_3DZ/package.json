@@ -1,0 +1,13 @@
+{
+    "name": "lesson_3dz",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+        "dev": "node --watch create"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
