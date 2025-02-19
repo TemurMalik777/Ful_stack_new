@@ -1,0 +1,50 @@
+<nav>
+    <ul class="nav">
+        <li class="<%= title === 'Adabiyot page' ? 'active' : '' %>">
+            <a href="/adabiyot">Adabiyotlar</a>
+        </li>
+        <li class="<%= title === 'Maqola page' ? 'active' : '' %>">
+            <a href="/maqola">Maqolalar</a>
+        </li>
+        <li class="<%= title === 'Dissertatsiya page' ? 'active' : '' %>">
+            <a href="/dissertatsiya">Dissertatsiyalar</a>
+        </li>
+        <li class="<%= title === 'Monografiya page' ? 'active' : '' %>">
+            <a href="/monografiya">Monografiyalar</a>
+        </li>
+        <li class="<%= title === 'Muassasa page' ? 'active' : '' %>">
+            <a href="/muassasa">Muassasalar</a>
+        </li>
+        <li class="<%= title === 'Muallif page' ? 'active' : '' %>">
+            <a href="/muallif">Mualliflar</a>
+        </li>
+        <li class="<%= title === 'Jurnal page' ? 'active' : '' %>">
+            <a href="/jurnal">Jurnallar</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="search-box">
+    <div class="input-group">
+        <label for="bookName">Adabiyot nomi</label>
+        <input
+            type="text"
+            id="bookName"
+            placeholder="Adabiyot nomini kiriting"
+        />
+    </div>
+
+    <div class="input-group">
+        <label for="authorName">Muallif ismi sharifi</label>
+        <input
+            type="text"
+            id="authorName"
+            placeholder="Muallif ismini kiriting"
+        />
+    </div>
+
+    <div class="buttons">
+        <button class="search-btn">Qidiruv</button>
+        <button class="filter-btn">Qidiruv filtri</button>
+    </div>
+</div>
