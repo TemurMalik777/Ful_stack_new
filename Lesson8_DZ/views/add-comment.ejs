@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+    <body>
+        <%- include("./partials/nav.ejs") %>
+        <h2>Yangi comment ma'lumotlarini kiriting</h2>
+        <form action="/add-comment" method="post" id="post-form">
+            <label for="name">comment name:</label><br /><br />
+            <input type="text" name="name" id="name" /> <br /><br />
+
+            <label for="email">Email:</label><br /><br />
+            <input type="email" name="email" id="email" /> <br /><br />
+
+            <label for="body">Phone:</label><br /><br />
+            <input type="tel" name="body" id="body" /> <br /><br />
+
+            <button type="submit">Save comment</button>
+        </form>
+    </body>
+</html>
